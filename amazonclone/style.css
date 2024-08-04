@@ -1,0 +1,452 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Amazon Ember", Arial, sans-serif;
+  font-size: 15px;
+}
+.navbar {
+  height: 60px;
+  border: solid 2px black;
+  background-color: #131921;
+  position: relative;
+}
+.amazonlogo {
+  position: relative;
+  left: 10px;
+  top: 3px;
+  width: 115px;
+  height: 50px;
+}
+.logo {
+  position: absolute;
+  left: 40px;
+  height: 30px;
+  margin-left: -35px;
+  margin-top: 15px;
+}
+.amazonlogo:hover {
+  border: 1px white solid;
+}
+
+/* .logo:hover {
+  cursor: pointer;
+  border: 0.5 solid white;
+  height: 40px;
+  transition: 0.3s ease;
+  border: 2px solid transparent;
+} */
+img:hover {
+  cursor: pointer;
+}
+
+.address {
+  position: absolute;
+  height: 50px;
+  width: 200px;
+  left: 130px;
+  top: 3px;
+  color: white;
+}
+.address:hover {
+  border: 1px solid;
+  cursor: pointer;
+}
+.address img {
+  position: absolute;
+  top: 15px;
+  height: 25px;
+}
+.address .p1 {
+  position: absolute;
+  left: 25px;
+  top: 10px;
+  font-size: 12px;
+}
+.address .p2 {
+  position: absolute;
+  left: 25px;
+  top: 25px;
+  font-size: 15px;
+}
+
+.searchbar {
+  margin-left: 20%;
+  height: 40px;
+  border-radius: 5px;
+  width: 50%;
+  left: 200px;
+  top: 0;
+}
+.search {
+  position: absolute;
+  width: 1400px;
+  top: 10px;
+  left: 80px;
+}
+.search img:hover {
+  background-color: #ffae34;
+}
+.search img {
+  height: 37px;
+  position: absolute;
+  background-color: #febd69;
+  margin-top: 9px;
+  left: 941px;
+  top: -7px;
+  border-left: none;
+}
+input:hover {
+  border: solid 3px #febd69;
+}
+.lng {
+  height: 50px;
+  width: 80px;
+  position: absolute;
+  color: white;
+  left: 1076px;
+  top: 4px;
+}
+.lng a {
+  position: absolute;
+  top: 0;
+}
+.lng:hover {
+  border: solid 1px #e1e9f4;
+  cursor: pointer;
+}
+
+.en {
+  position: absolute;
+  padding-left: 44px;
+  padding-top: 5px;
+  font-size: 15px;
+  font-weight: bold;
+  top: 12px;
+}
+.en img {
+  position: absolute;
+  height: 18px;
+  top: 3px;
+  left: 10px;
+}
+.sign {
+  color: white;
+}
+.sign div {
+  display: inline-block;
+  height: 50px;
+  width: 140px;
+  position: absolute;
+  right: 215px;
+  top: 3px;
+}
+.sign div:hover {
+  border: 1px white solid;
+  cursor: pointer;
+}
+.p1 {
+  position: absolute;
+  top: 5px;
+  left: 7px;
+  font-size: 13px;
+}
+.p2 {
+  position: absolute;
+  top: 22px;
+  left: 7px;
+  font-size: 15px;
+  font-weight: bold;
+}
+.order {
+  height: 50px;
+  width: 90px;
+  color: white;
+  position: absolute;
+  top: 2px;
+  right: 120px;
+}
+.order:hover {
+  border: 1px solid white;
+  cursor: pointer;
+}
+.cart {
+  position: absolute;
+  height: 45px;
+  width: 95px;
+  top: 5px;
+  right: 15px;
+  color: white;
+}
+.cart:hover {
+  border: 1px solid white;
+}
+.cart img {
+  position: absolute;
+  top: 0;
+  height: 40px;
+}
+.cart a {
+  position: absolute;
+  left: 44px;
+  top: 16px;
+  font-size: 17px;
+  font-weight: bold;
+}
+.link {
+  background-color: #232f3e;
+  height: 50px;
+}
+.link a {
+  text-decoration: none;
+  padding: 10px;
+  margin-left: 5px;
+  display: inline-block;
+  align-items: center;
+  color: white;
+}
+.link a:hover {
+  border: 0.5px solid white;
+}
+.bg {
+  height: 282px;
+  background-image: url(/amazonclone/PC_Hero_3000x1200_BS_PC._CB558386585_.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.container {
+  height: 900px;
+  background-color: #e3e6e6;
+}
+.itembox {
+  height: 400px;
+  width: 350px;
+  position: relative;
+  margin: 12px;
+  display: inline-block;
+  background-color: white;
+}
+
+h2 {
+  padding-top: 10px;
+  padding-left: 25px;
+  padding-bottom: 15px;
+}
+.item img {
+  height: 120px;
+  width: 150px;
+  margin: 5px;
+  padding-left: 9px;
+}
+.item1 {
+  height: 264px;
+  width: 320px;
+  padding-left: 15px;
+}
+
+.boxrow2 {
+  height: 400px;
+  width: 350px;
+  background-color: white;
+  display: inline-block;
+  margin: 12px;
+  position: relative;
+}
+.img5,
+.img6,
+.img7,
+.img8 {
+  position: absolute;
+  height: 264px;
+  width: 320px;
+  left: 15px;
+  top: 80px;
+}
+button {
+  width: 100%;
+  height: 50px;
+  background-color: #37475a;
+  border: none;
+  color: white;
+}
+button:hover {
+  cursor: pointer;
+  background-color: #3f5166;
+}
+
+footer {
+  height: 320px;
+  width: 100%;
+  background-color: #232f3e;
+  color: white;
+  position: relative;
+  margin: auto 0;
+}
+.col1 {
+  padding-left: 250px;
+  padding-top: 50px;
+}
+.col2 {
+  position: absolute;
+  top: 50px;
+  left: 510px;
+}
+.col3 {
+  position: absolute;
+  left: 730px;
+  top: 50px;
+}
+.col4 {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  padding-right: 250px;
+}
+a {
+  text-decoration: none;
+  color: #e1e9f4;
+  display: block;
+  line-height: 1.8;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+h3 {
+  padding-bottom: 12px;
+  font-size: 18px;
+}
+.endlogo {
+  height: 150px;
+  background-color: #232f3e;
+  position: relative;
+}
+.endlogo img {
+  height: 30px;
+  position: absolute;
+  left: 500px;
+  top: 65px;
+}
+.amazon:hover {
+  height: 35px;
+  transition: 0.5s ease;
+}
+
+.lang {
+  height: 48px;
+  width: 150px;
+  position: relative;
+  border: 1px solid #e1e9f4;
+  margin-left: 700px;
+  top: 48px;
+  left: -50px;
+  border-radius: 5px;
+}
+.lang img {
+  left: 15px;
+  top: 15px;
+  height: 20px;
+}
+.lang p {
+  position: absolute;
+  top: 10px;
+  left: 40px;
+  font-size: 20px;
+  color: white;
+}
+.country {
+  height: 48px;
+  width: 130px;
+  position: relative;
+  left: 840px;
+  border: 1px solid #e1e9f4;
+  border-radius: 5px;
+}
+.country,
+.lang:hover {
+  cursor: pointer;
+}
+.country p {
+  font-size: 20px;
+  position: absolute;
+  color: white;
+  left: 60px;
+  top: 10px;
+}
+.country img {
+  left: 20px;
+  top: 11px;
+  height: 20px;
+}
+
+.endfooter {
+  height: 200px;
+  width: 100%;
+  background-color: #131a22;
+  color: #131921;
+  font-size: 15px;
+}
+.endfooter a {
+  color: #131921;
+}
+.endfooter a:hover {
+  text-decoration: underline;
+}
+.colm1 {
+  height: 200px;
+  width: 200px;
+  background-color: white;
+  position: absolute;
+  left: 200px;
+}
+.colm2 {
+  height: 200px;
+  width: 200px;
+  background-color: white;
+  position: absolute;
+  left: 500px;
+}
+.colm3 {
+  height: 200px;
+  width: 200px;
+  background-color: white;
+  position: absolute;
+  left: 800px;
+}
+.colm4 {
+  height: 200px;
+  width: 200px;
+  background-color: white;
+  position: absolute;
+  left: 1100px;
+}
+.copyright {
+  position: relative;
+  height: 100px;
+  background-color: #131921;
+  padding-left: 500px;
+}
+.copyright div {
+  position: absolute;
+  top: 20px;
+  left: 530px;
+}
+.copyright a {
+  display: inline;
+  padding-left: 20px;
+  font-size: 14px;
+  font-family: sans-serif;
+}
+.copyright a:hover {
+  text-decoration: underline;
+}
+.copyright p {
+  color: white;
+  padding-left: 80px;
+  padding-top: 5px;
+}
